@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized (subject to certain rules and regulations).">
+    <title>TEDxGECT</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+    <meta name="theme-color" content="#000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="css/semantic.min.css">
+    <link rel="stylesheet" href="/css/animate.min.css"> -->
+    <link rel="stylesheet" href="/css/style-2.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+  </head>
+  <body>
+    <div id="loader">
+      <div class="ui active dimmer">
+        <div class="ui large text loader">Loading...</div>
+      </div>
+    </div>
+    <div id="content">
+
+      <div class="ui top fixed menu" id="top-menu" >
+        <a href="/">
+          <img id="logo" src="/img/logo.jpg">
+        </a>
+        <div class="item right" id="menu-options">
+          <a class="item" href="#about-menu">About</a>
+          <a class="item" href="#speakers-menu">Speakers</a>
+          <a class="item" href="#venue-menu">Venue</a>
+          <a class="item" href="#organisers-menu">Organisers</a>
+          <a class="item" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="ui modal" id="register-modal">
+        <div class="content">
+            <h3 style="color: black !important;">Select your choice: </h3>
+            <label >
+              <input type="radio" name="college" value="gec"><b style="color: black !important;">&nbsp;GECTian</b>
+            </label>
+            <br><br>
+            <label>
+              <input type="radio" name="college" value="non-gec"><b style="color: black !important;">&nbsp;Non GECTian</b>
+            </label>
+        </div>
+        <div class="action">
+          <button class="ui large black button" id="register-btn">Register</button>
+        </div>
+        <br>
+      </div>
+      </div>
+      <div id="section-1">
+        <div id="background-images">
+          <img id="bg-1" src="/img/background-1.jpg">
+          <img id="bg-3" src="/img/background-3.jpg">
+        </div>
+        <a>
+          <div id="register">
+            <button class="ui large inverted red basic button" id="get-tickets">Get tickets</button>
+          </div>
+        </a>
+        <div id="scroll-down" class="animated infinite bounce">
+          <i class="big angle double down icon"></i>
+        </div>
+      </div>
+      <a name="about-menu"></a>
+      <div id="about">
+        <br>
+        <br>
+        <h1 id="about-header" class="ui horizontal header inverted divider">
+          About <span class="red">TEDx</span><br><br><span class="red">x</span> = independently organized event
+        </h1>
+        <p style="color:#ed3833 ; font-weight: normal !important;" >
+          In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized.
+        </p>
+      </div>
+      <div id="about">
+        <br>
+        <br>
+        <h1 id="about-header" class="ui horizontal header inverted divider">
+          About <span class="red">TED</span>
+        </h1>
+        <p style="color:#ed3833 ; font-weight:normal !important;">
+
+      TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.
+
+The annual TED Conference takes place each spring in Vancouver, British Columbia. TED's media initiatives include TED.com, where new TED Talks are posted daily; the Open Translation Project, which provides subtitles and interactive transcripts as well as translations from volunteers worldwide; the educational initiative TED-Ed. TED has established the annual TED Prize, where exceptional individuals with a wish to change the world get help translating their wishes into action; TEDx, which supports individuals or groups in hosting local, self- organized TED-style events around the world, and the TED Fellows program, helping world-changing innovators from around the globe to amplify the impact of their remarkable projects and activities.
+
+Follow TED on Twitter at<span > <a style="color:#ed3833 ; font-weight:normal !important;"href="http://twitter.com/TEDTalks">http://twitter.com/TEDTalks</a> <span style="color:#ed3833; font-weight:normal !important;"> , or on Facebook at </span> <a style="color:#ed3833; font-weight:normal !important;"href="http://www.facebook.com/TED">http://www.facebook.com/TED .</a></span>
+</p>
+</div>
+
+      <a name="speakers-menu"></a>
+      <br><br>
+      <h1 id="speakers-header" class="ui horizontal header inverted divider">
+        Speakers
+      </h1>
+      <div id="speakers">
+          <div id="tony-joseph">
+            <img src="img/tony-joseph.jpg" class="speaker-image" alt="">
+            <h4>Tony Joseph</h4>
+          </div>
+          <div id="shreya-krishnan">
+            <img src="img/shreya-krishnan.jpg" class="speaker-image" alt="">
+            <h4>Shreya Krishnan h5</h4>
+          </div>
+          <div id="prakash-bare">
+            <img src="img/prakash-bare.jpg" class="speaker-image" alt="">
+            <h4>Prakash Bare</h4>
+          </div>
+          <div id="athul-pm">
+            <img src="img/athul-pm.jpg" class="speaker-image" alt="">
+            <h4>Munna</h4>
+          </div>
+          <div id="meghnad-s">
+            <img src="img/meghnad-s.jpg" class="speaker-image" alt="">
+            <h4>Meghnad S</h4>
+          </div>
+          <div id="george-mathen">
+            <img src="img/george-mathen.jpg" class="speaker-image" alt="">
+            <h4>Appupen</h4>
+          </div>
+      </div>
+      <div class="ui modal" id="tony-joseph-modal">
+        <div class="scrolling image content">
+          <img src="img/tony-joseph.jpg" class="image">
+          <div class="description">
+            <p>Tony Joseph is the architect behind South India’s tallest apartment tower, the forty-storey Choice Paradise. He is an elite level architect who has been at the helm of many other renowned projects such as the Kumarakom Lake Resort in Kottayam, the Capternay Resort in Seychelles and the Madhuban Resort in Gujarat. It was in the '80s that he first decided to pursue architecture as his career, finding in it a unique confluence of science and art. He did his B.Arch from MIT Manipal and went on to do his M.Arch from the University of Texas, Austin. He worked in America for a few more years, gaining valuable experience from the likes of Charles Moore and Patrick Monteiro. Moore in particular shaped his ideology and thinking.
+He returned in 1989 to establish his own architectural firm in India, called STAPATI in Calicut. The firm went on to revolutionise the architectural landscape in the country, introducing new types of designs that merged seamlessly with its natural surroundings. This stems from Tony’s own philosophy, wherein he believes that humans cannot hope to surpass nature’s pristine beauty, but simply improvise upon it. All his designs have a strong traditional base, but with a modern twist.
+Ar. Tony is indeed a pioneer in the field of modern Indian architecture. Come listen to his ideas and his message at TEDxGECT.
+            </p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Close
+          </div>
+        </div>
+      </div>
+      <div class="ui modal" id="shreya-krishnan-modal">
+        <div class="scrolling image content">
+          <img src="img/shreya-krishnan.jpg" class="image">
+          <div class="description">
+            <p>
+              Breaking stereotypes in the beauty page domain, Shreya Krishnan, a mother, aged 32, bagged the Mrs. India Universe 2017 title and is primed to go global. A marketing & communication personnel by profession, she is a digital marketing guru in the Indian industry with a strong personality. The vice president of the marketing and communication division at the Anviti Insurance Brokers, she leads a busy schedule, which doesn’t dampen her charismatic personality any. Meanwhile, she is also a script writer, content writer and a choreographer, some of her notable works being with the Hindu.
+                A vivid speaker, marketing wizard, activist, beauty pageant and writer. And above all a bel-esprit; Mrs Krishnan has it all to capture the attention of the crowd.
+            </p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Close
+          </div>
+        </div>
+      </div>
+      <div class="ui modal" id="prakash-bare-modal">
+        <div class="scrolling image content">
+          <img src="img/prakash-bare.jpg" class="image">
+          <div class="description">
+            <p>A motley mix of theatre and tech, Prakash Bare is a class of his own. An engineer by education, an entrepreneur at soul, an actor by profession, he exhibits a spark of brilliance wherever he goes. Masters from IIT Kanpur and co - founder of GDA Technologies, a company listed on the Inc Magazine as the fastest growing privately held companies, is the least of his abilities.  Involved in multiple startups following a stint of 15 years in the Silicon Valley, he is also a critically acclaimed artist with notable performances in Ivan Megharoopan, Sufi Paranja Kadha, Shutter, Oru Indian Pranayakatha. Known for his ability to mould wonders, his films have delivered unconventional technological trends in the movie domain. The producer of a multitude of award winning movies, all under the banner of Silicon Media, they’ve gone on to be showcased at prestigious international film festivals.
+We have for you, Mr Prakash Bare, to show you his realm of technology and theatre.</p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Close
+          </div>
+        </div>
+      </div>
+      <div class="ui modal" id="athul-pm-modal">
+        <div class="scrolling image content">
+          <img src="img/athul-pm.jpg" class="image">
+          <div class="description">
+            <p>P M Atul aka Munna has practically been a musician since childhood. He gained immense popularity in 2014 when he released a music video by the name "Enikku Oru Koppum Illa" which damned social commentary on the downtrodden in our society.
+He has his hand in many a musical venture, namely Shanka Tribe, a musical group that has been performing incredibly surreal music that expands our senses beyond imagination and leads us into a world that we never knew existed before. They've performed at NIT Ragam, Strawberry Fields Bangalore etc.
+The effect that aesthetic music has on our soul is unprecedented and as a performer, Munna along with his friend have been performing the Hang Drum under the name HangEssence for quite a while now.
+If you wish to feel the euphoria of the soft, heavenly taps upon a massive alienistic instrument; be prepared, for you'll truly explore the depths of reality as Munna lights up the insides of your being
+</p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Close
+          </div>
+        </div>
+      </div>
+      <div class="ui modal" id="meghnad-s-modal">
+        <div class="scrolling image content">
+          <img src="img/meghnad-s.jpg" class="image">
+          <div class="description">
+            <p>The creator of the weekly dose of hilarious educative videos on newslaundary that goes by the name 'Consti-tuition', Meghnad S is known for his witty and bold commentary. His take on many political issues are entertaining to say the least.
+
+A former LAMP fellow, a fellowship run by PRS Legislative Research , he has been working with multiple MPs across party lines for the past six years. He also has a history with freelance journalism, feature writing and chartered accountancy.
+
+He writes enriching columns about the Parliament, policy and current affairs on Portfolio. His smart and funny side is on plain display on Twitter where he simplifies legislation in the most entertaining way possible.
+
+TEDxGECT brings you this puntastic enigma of a person!</p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Close
+          </div>
+        </div>
+      </div>
+      <div class="ui modal" id="george-mathen-modal">
+        <div class="scrolling image content">
+          <img src="img/george-mathen.jpg" class="image">
+          <div class="description">
+            <p>From Westeros to Oz, from Asgard to Pandora, we've all been fascinated and at times addicted to mythical, fictional worlds and have always wondered how they were created. The sheer perfection with which they have been portrayed never cease​ to amaze us.
+
+The world of Halahala, is one among a million such worlds, yet it is one in a million. It speaks of different ideas, but the creator, George Mathen a.k.a 'Appupen' , says he consciously​ leaves out text. His book, 'Moonward' became a huge hit and his other books, 'Legends of Halahala' and 'Aspyrus' followed suit.
+
+"Just like being smart at writing, you can be smart in pictures. You know at the back of your mind what it could or could not be and if you trust your reading of the book, the ideas in the back of your mind take shape and come across.”- he says.
+
+But he is, in no way an 'Appupen' in real life. He has his hands full with advertising, activism, animation and even in the film industry. He is the founding member and drummer of the Bangalore-based band, 'Lounge Piranhas'.
+
+There is no limit to George Mathen's artistic horizons, both in terms of style, and canvas. TEDxGECT is proud to announce 'Appupen' as one of our keynote speakers</p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Close
+          </div>
+        </div>
+      </div>
+      <a name="venue-menu"></a>
+      <div id="venue">
+        <br>
+        <h1 id="venue-header" class="ui horizontal header inverted divider">
+          Venue
+        </h1>
+        <a target="_blank" href="https://goo.gl/maps/dmMca2mDmm82" style="position: relative;">
+          <i class="map big marker alternate icon"></i>
+          <br>
+        </a>
+        <h1>
+          Government Engineering College, Thrissur
+        </h1>
+        <h1>
+          6th April 2018
+        </h1>
+        <br>
+      </div>
+      <a name="organisers-menu"></a>
+      <h1 id="organisers-header" class="ui horizontal header inverted divider">
+        Organisers
+      </h1>
+      <div id="organisers">
+        <div class="container">
+          <img src="img/raman-nv.jpg" alt="Avatar" class="image">
+          <div class="middle">
+            <h4>Raman N V</h4>
+
+            <a href="tel:+91-9495667499" class="text">9495667499</a>
+          </div>
+          <h4>Lead Organiser</h4>
+        </div>
+        <div class="container">
+          <img src="img/safal-ahmed.jpg" alt="Avatar" class="image">
+          <div class="middle">
+            <h4>Safal Ahmed</h4>
+
+            <a href="tel:+91-9400721342" class="text">9400721342</a>
+          </div>
+          <h4>Curator</h4>
+        </div>
+        <div class="container">
+          <img src="img/neeraj-t.jpg" alt="Avatar" class="image">
+          <div class="middle">
+            <h4>Neeraj T</h4>
+
+            <a href="tel:+91-9746674220" class="text">9746674220</a>
+          </div>
+          <h4>Public Relations</h4>
+        </div>
+        <div class="container">
+          <img src="img/waleed.jpeg" alt="Avatar" class="image">
+          <div class="middle">
+            <h4>Mohamed Waleed</h4>
+
+            <a href="tel:+91-9946039207" class="text">9946039207</a>
+          </div>
+          <h4>Publicity Head</h4>
+        </div>
+        <div class="container">
+          <img src="img/harikrishnan-mb.jpg" alt="Avatar" class="image">
+          <div class="middle">
+            <h4>Harikrishnan M B</h4>
+
+            <a href="tel:+91-9645391495" class="text">9645391495</a>
+          </div>
+          <h4>Technical Head</h4>
+        </div>
+        <div class="container">
+          <img src="img/abhilash.jpg" alt="Avatar" class="image">
+          <div class="middle">
+            <h4>Abhilash M M</h4>
+
+            <a href="tel:+91-9847781340" class="text">9847781340</a>
+          </div>
+          <h4>Budget Manager</h4>
+        </div>
+        <div class="container">
+          <img src="img/shreya.jpg" alt="Avatar" class="image">
+          <div class="middle">
+            <h4>Shreya Davis</h4>
+
+            <a href="tel:+91-7560869318" class="text">7560869318</a>
+          </div>
+          <h4>Operations Head</h4>
+        </div>
+        <div class="container">
+          <img src="img/john.jpg" alt="Avatar" class="image">
+          <div class="middle">
+            <h4>John George</h4>
+
+            <a href="tel:+91-9496358847" class="text">9496358847</a>
+          </div>
+          <h4>Logistics Head</h4>
+        </div>
+      </div>
+      <footer>
+        <a name="contact"></a>
+        <h1 class="ui horizontal header inverted divider">
+          Contact
+        </h1>
+        <div id="footer-content" class="ui grid">
+          <div class="eight wide column" style="padding: inherit; word-wrap: break-word;">
+            Raman N V <br> (Lead organiser)<br> 9495667499 <br>
+          </div>
+          <div class="eight wide column" style="padding: inherit; word-wrap: break-word;">
+            Safal Ahmed <br> (Curator)<br> 9400721342 <br>
+          </div>
+          <div class="sixteen wide column">
+            <a target="_blank" href="https://www.facebook.com/tedxgect">
+              <i class="facebook f icon"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/tedxgect/">
+              <i class="instagram f icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="ui divider"></div>
+        <span style="color:#ed3833 !important;">
+          THIS INDEPENDENT TEDX EVENT IS OPERATED UNDER LICENSE FROM TED.
+        </span>
+      </footer>
+    </div>
+    <!-- <script src="js/p5.min.js">
+
+    </script>
+    <script src="js/sketch.js">
+
+    </script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="js/semantic.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
