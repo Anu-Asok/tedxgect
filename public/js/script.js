@@ -51,18 +51,18 @@ setInterval(function(){
     i=(i+1)%2;
     console.log(i);
     $('#'+bgImages[i]).css({
-      'opacity': 0.4
+      'opacity': 0.6
     });
-},2500);
-document.getElementById('get-tickets').addEventListener('click',function(){
-  $('#register-modal').modal('show');
-});
-
-document.getElementById('register-btn').addEventListener('click',function(){
-  var college =$('input[name="college"]:checked')[0].value;
-  $('#register-btn').addClass('loading');
-  if (college == 'gec')
-    window.location.href='https://docs.google.com/forms/d/1_hW93ZDgbdK0MTM2jzwpYjc4SMv_8bAyERbOEt66YqE/edit?c=0&w=1';
-  else
-      window.location.href='https://www.yepdesk.com/tedx-gect';
-});
+},3000);
+// document.getElementById('get-tickets').addEventListener('click',function(){
+//   $('#register-modal').modal('show');
+// });
+//
+// document.getElementById('register-btn').addEventListener('click',function(){
+//   var college =$('input[name="college"]:checked')[0].value;
+//   $('#register-btn').addClass('loading');
+//   if (college == 'gec')
+//     window.location.href='https://docs.google.com/forms/d/1_hW93ZDgbdK0MTM2jzwpYjc4SMv_8bAyERbOEt66YqE/edit?c=0&w=1';
+//   else
+//       window.location.href='https://www.yepdesk.com/tedx-gect';
+// });

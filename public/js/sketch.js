@@ -5,8 +5,8 @@ function setup() {
     for (let i = 0; i < c.length; i++) {
         d = 8 + abs(6 * cos(t));
 
-        let darkRed =  color(255 - random(0,20), random(0,20), 0 + random(0,20));
-        let lightRed = color(255 - random(0,20), random(0,20), 20 + random(0,20))
+        let darkRed =  color(255 - random(0,50), random(0,50), 0 + random(0,50));
+        let lightRed = color(255 - random(0,50), random(0,50), 51 + random(0,50))
 
         if (i < 8)
             co = darkRed;
@@ -34,7 +34,7 @@ function setup() {
             b[i] = new ball(c[i][0] - width / 3.5, c[i][1] - height / 1.5, d, co);
         else
             b[i] = new ball(c[i][0] - width / 1.4, c[i][1] - height / 2.5, d, co);
-        b[i].vel.set(0, 0, 0);
+        b[i].vel.set(20*sin(t), 20*cos(t), 20*sin(t-1));
         t += 0.2;
     }
 }
@@ -48,7 +48,7 @@ function draw() {
         b[i].update();
         let springForce = createVector(b[i].pos.x, b[i].pos.y, b[i].pos.z);
         springForce.sub(b[i].initPos.x, b[i].initPos.y, b[i].initPos.z);
-        springForce.mult(-0.1);
+        springForce.mult(-0.05);
         b[i].applyForce(springForce);
         let velNew = createVector(b[i].initPos.x, b[i].initPos.y);
         let mouse = createVector(mouseX - width / 2, mouseY - height / 2);
@@ -80,9 +80,9 @@ class ball {
     update() {
         this.vel.add(this.acc);
         this.pos.add(this.vel);
-        this.vel.mult(0.85);
+        this.vel.mult(0.97);
         this.acc.mult(0);
-        this.vel.limit(5);
+        this.vel.limit(10);
     }
 
     isHovering() {

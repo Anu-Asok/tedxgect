@@ -23,10 +23,8 @@ body{
 }
 
 .item{
-  font-family: 'Arial';
-  font-weight: bold;
+  font-family: 'Ubuntu Condensed';
   font-size: 18px;
-  color:#ed3833 !important;
 }
 
 .card{
@@ -48,7 +46,7 @@ body{
 
 #background-images{
   position: relative;
-  height: 100vh;
+  height: 90vh;
 }
 
 #background-images > img{
@@ -72,7 +70,7 @@ body{
 
 
 #background-images > :first-child {
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 h1{
@@ -81,7 +79,6 @@ h1{
 
 @media only screen and (max-width: 768px){
   #background-images > img{
-    margin-top:40% ;
   }
 }
 
@@ -91,8 +88,7 @@ h1{
 }
 
 h1, footer>span{
-  font-family: 'Arial' !important;
-  font-weight: bold !important;
+  font-family: 'Ubuntu Condensed' !important;
 }
 
 footer{
@@ -107,8 +103,7 @@ footer{
 
 #footer-content > * {
   display: inline-block;
-  font-family: 'Arial' !important;
-  font-weight: bold !important;
+  font-family: 'Ubuntu Condensed';
   font-size: 20px;
   line-height: 28px;
 }
@@ -150,11 +145,19 @@ footer{
   padding-top: 20px;
 }
 
+#speakers{
+  padding-bottom: 20px;
+  margin: 90px;
 
+}
+
+#speakers > div{
+  display: inline-block;
+  margin-bottom: 50px;
+}
 
 #register > button{
-  font-family: 'Arial' !important;
-  font-weight: bold !important;
+  font-family: 'Ubuntu Condensed';
 }
 
 @media only screen and (max-width: 768px) {
@@ -180,16 +183,14 @@ footer{
     }
     #menu-options{
       display: none;
-      color:#ed3833 !important;
     }
 }
 
 
 .description > p{
   text-align: justify;
-  ont-family: 'Arial' !important;
-  font-weight: bold !important;
-  color:black !important;
+  font-family: 'Ubuntu Condensed' !important;
+  color: black !important;
   font-size: 18px;
 }
 
@@ -244,17 +245,12 @@ footer{
   padding-bottom: 20px;
 }
 
-#organisers *{
-  color:white!important;
-}
-
 #about > p{
   margin: 70px 80px;
   text-align: center;
   line-height: 35px;
   font-size: 23px;
-  font-family: 'Arial' !important;
-  font-weight: bold !important;
+  font-family: 'Ubuntu Condensed';
 }
 
 @media only screen and (max-width: 768px) {
@@ -274,20 +270,6 @@ footer{
   color: #000 !important;
 }
 
-#speakers{
-  padding-bottom: 20px;
-  margin: 90px;
-  color:#ed3833 !important;
-}
-
-#speakers > div{
-  display: inline-block;
-  margin-bottom: 50px;
-  color:#ed3833 !important;
-}
-#speakers  *{
-  color:#ed3833 !important;
-}
 /*#organisers{
   padding: 30px 0px;
   background: url('/img/background-1.jpg')
@@ -297,4 +279,8 @@ footer{
 #register-modal > *{
   color: black !important;
   text-align: center;
+}
+
+#about-header{
+  word-wrap: break-word;
 }
