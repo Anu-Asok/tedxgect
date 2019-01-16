@@ -16,6 +16,10 @@ body{
   cursor: pointer;
 }
 
+p::first-letter{
+  color: #ff0000;
+   font-size: 40px;
+}
 #top-menu{
     height: 60px;
     transition: margin-top 0.35s;
@@ -147,7 +151,7 @@ footer{
 
 #speakers{
   padding-bottom: 20px;
-  margin: 90px;
+  margin: 40px;
 
 }
 
@@ -181,10 +185,14 @@ footer{
       margin: 0px;
       margin-top: 30px;
     }
-    #menu-options{
+    #menu-options > *{
       display: none;
     }
+    #sponsor{
+      display: block;
+    }
 }
+
 
 
 .description > p{
@@ -247,9 +255,9 @@ footer{
 
 #about > p{
   margin: 70px 80px;
-  text-align: center;
-  line-height: 35px;
-  font-size: 23px;
+  text-align: justify;
+  line-height: 26px;
+  font-size: 20px;
   font-family: 'Ubuntu Condensed';
 }
 
@@ -283,4 +291,29 @@ footer{
 
 #about-header{
   word-wrap: break-word;
+}
+
+
+#sponsor-section{
+  font-family: 'Ubuntu Condensed';
+  font-size: 21px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
+
+#sponsor-section > p{
+  margin-top: 42px;
+text-align: justify;
+padding: 0px 20px;
+}
+
+#sponsor-section > h1{
+  font-size: 50px;
+}
+
+.machine{
+  width: 100vw;
+  display: block;
+  height: auto;
 }

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="/css/animate.min.css"> -->
-    <link rel="stylesheet" href="/css/style-4.css">
+    <link rel="stylesheet" href="/css/style-5.css">
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body>
@@ -22,7 +22,7 @@
         <div class="ui large text loader">Loading...</div>
       </div>
     </div>
-    <div id="content">
+    <div id="content" style="opacity:0;">
 
       <div class="ui top fixed menu" id="top-menu" >
         <a href="/">
@@ -34,20 +34,22 @@
           <a class="item" href="#venue-menu">Venue</a>
           <a class="item" href="#organisers-menu">Organisers</a>
           <a class="item" href="#contact">Contact</a>
+          <a class="item" id="sponsor" href="/sponsor.html">Sponsor</a>
         </div>
       </div>
       <div class="ui modal" id="register-modal">
         <div class="content">
-            <h3 style="color: black !important;">The ticket also includes: </h3>
-            <ul >
-              <li>TEDxGECT giveaways</li>
-              <li>Delectable Lunch</li>
-              <li>Snacks to nibble on to keep those grey cells alert.</li>
-              <li>Attendee certificates</li>
-            </ul>
+            <h3 style="color: black !important;">Select your choice: </h3>
+            <label >
+              <input type="radio" name="college" value="gec"><b style="color: black !important;">&nbsp;GECian</b>
+            </label>
+            <br><br>
+            <label>
+              <input type="radio" name="college" value="non-gec"><b style="color: black !important;">&nbsp;Non GECian</b>
+            </label>
         </div>
         <div class="action">
-            <button class="ui large black button" id="register-btn">Buy tickets</button>
+          <button class="ui large black button" id="register-btn">Register</button>
         </div>
         <br>
       </div>
@@ -57,11 +59,13 @@
           <img id="bg-1" src="/img/background-1.jpg">
           <img id="bg-3" src="/img/background-3.jpg">
         </div>
-        <a>
-          <div id="register">
-            <button class="ui large inverted red basic button" id="get-tickets">Get tickets</button>
-          </div>
-        </a>
+        <div id="register">
+            <a>
+              <button class="ui large inverted red basic button" id="get-tickets">
+                Tickets sold out!
+              </button>
+            </a>
+        </div>
         <div id="scroll-down" class="animated infinite bounce">
           <i class="big angle double down icon"></i>
         </div>
@@ -99,11 +103,19 @@ Follow TED on Twitter at <a href="http://twitter.com/TEDTalks">http://twitter.co
 </div>
 
       <a name="speakers-menu"></a>
-      <br><br>
+
       <h1 id="speakers-header" class="ui horizontal header inverted divider">
         Speakers
       </h1>
       <div id="speakers">
+          <div id="kochouseph-chittilappilly">
+            <img src="img/kochouseph-chittilappilly.jpg" class="speaker-image" alt="">
+            <h4>Kochouseph Chittilappilly</h4>
+          </div>
+          <div id="major-chandrakant-nair">
+            <img src="img/major-chandrakant-nair.jpg" class="speaker-image" alt="">
+            <h4>Major Chandrakant Nair</h4>
+          </div>
           <div id="tony-joseph">
             <img src="img/tony-joseph.jpg" class="speaker-image" alt="">
             <h4>Tony Joseph</h4>
@@ -128,6 +140,84 @@ Follow TED on Twitter at <a href="http://twitter.com/TEDTalks">http://twitter.co
             <img src="img/george-mathen.jpg" class="speaker-image" alt="">
             <h4>Appupen</h4>
           </div>
+          <div id="aswathi-dinil">
+            <img src="img/aswathi-dinil.jpg" class="speaker-image" alt="">
+            <h4>Aswathi Dinil</h4>
+          </div>
+          <div id="muneer-m">
+            <img src="img/muneer-m.jpg" class="speaker-image" alt="">
+            <h4>Dr. Muneer M</h4>
+          </div>
+      </div>
+      <div class="ui modal" id="aswathi-dinil-modal">
+        <div class="scrolling image content">
+          <img src="img/aswathi-dinil.jpg" class="image">
+          <div class="description">
+            <p>Aswathi Dinil Sanker is a multifaceted woman who loves all the multiple roles she plays in life. She is a special educator, a businesswoman, a trainer, a graphologist, a writer and an enthusiastic marathon runner. She is the co-founder of Samathva Center for excellence,a training institute centered around children and the executive director(training ) of Finomis Gurukul, Calicut.
+
+      After her MBA, she started her career as a corporate banker with a leading bank but it was the birth of her daughter and her diagnosis with Down Syndrome that led her to embark on a more fruitful journey of enlightening and empowering children with special needs and their caretakers. She is an active advocate and a source of support for the Down Syndrome community in Kerala.
+
+      We proudly welcome Aswathi Dinil, to TEDxGECT.
+            </p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Close
+          </div>
+        </div>
+      </div>
+      <div class="ui modal" id="muneer-m-modal">
+        <div class="scrolling image content">
+          <img src="img/muneer-m.jpg" class="image">
+          <div class="description">
+            <p>The maestro of innovative management & consultancy , Dr M Muneer is a profilic figure in the management diaspora. He heads CustomerLab Solutions.
+
+Dr. Muneer is also a well acclaimed columnist with over 600 publications in renowned papers like Economic Times, Times of India, Business World to name a few. He oversees the National Games & Institute for Competitiveness as the Director of the board. He has had his foot in the start-up space with strategic partneship with Mach49 : a Silicon Valley company. Cited as a manager with innovation and creativity, he runs Medici, a non - profit firm to harness human potential for social well being. For his successful stint in the management industry and social commitments, he has won several accolades including the World HR Congress Staretegic Leadership Award.
+
+We welcome Dr. M Muneer, an alumnus of GEC Thrissur, to TEDxGECT.
+            </p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Close
+          </div>
+        </div>
+      </div>
+      <div class="ui modal" id="kochouseph-chittilappilly-modal">
+        <div class="scrolling image content">
+          <img src="img/kochouseph-chittilappilly.jpg" class="image">
+          <div class="description">
+            <p>How many people would have the courage and determination to donate their organs when doctors have suggested not to do so and family members have cited their disapproval?  At the age of 61, he donated one of his kidneys to a truck driver in need.Kochouseph Chittilappilly is one, born and bred in the cultural capital of Kerala , Mr Chitttilappilly is the founding Chairman and C.E.O of V - Guard Industries Ltd  & Wonderla - the largest amusement park chain in India. The K.   Chittilappilly Foundation currently runs 2 institutions - an old age home and a destitute home for children. His company HQ has been recognized for its revolutionary green practices. Mr.Chittilappilly is also at  the forefront of the decision making process regarding the stray dog crisis in the State.
+            </p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Close
+          </div>
+        </div>
+      </div>
+      <div class="ui modal" id="major-chandrakant-nair-modal">
+        <div class="scrolling image content">
+          <img src="img/major-chandrakant-nair.jpg" class="image">
+          <div class="description">
+            <p>Major Chandrakant Nair, fondly known as Captain, is without a doubt one of the best quizmasters in the country. He is also a former World Quizzing Champion.
+In his childhood, he wanted to follow in his parents' footsteps and become a doctor. Then the Kargil War took place. He was in his 10th standard. This left a deep impression upon him and made him want to join the army badly.
+So naturally, he did both. He enrolled in the Armed Forces Medical College and became both a doctor and subsequently a Major.
+However, as an army doctor, he felt that his other interests of quizzing, reading and travelling were taking the back seat. So he took the brave decision to quit his job and pursue quizzing as his full time occupation.
+He has since become one of the country's premier quizzers, regularly winning laurels both at home and abroad.
+He now spends most of his time travelling the country, reading books and conducting quizzes. As a QM, he stands out among his peers because of his calm demeanour, deeply researched and thought provoking questions.
+This April 6th, things are going to get 'major' in the cultural capital.
+            </p>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Close
+          </div>
+        </div>
       </div>
       <div class="ui modal" id="tony-joseph-modal">
         <div class="scrolling image content">

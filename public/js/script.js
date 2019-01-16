@@ -12,7 +12,7 @@
 // });
 
 window.onload = function(){
-  $('#loader').css('display', 'none');
+  $('#loader').css('display', 'none');	
   $('#content').css('opacity', '1');
   $('.content').css('opacity', '1');
 }
@@ -22,7 +22,7 @@ $('.special.cards .image').dimmer({
 
 
 // $('.ui.modal').modal('setting', 'transition', 'vertical-flip');
-var speakers = ['tony-joseph', 'shreya-krishnan', 'prakash-bare', 'athul-pm', 'meghnad-s', 'george-mathen']
+var speakers = ['tony-joseph', 'shreya-krishnan', 'prakash-bare','muneer-m', 'athul-pm', 'meghnad-s', 'aswathi-dinil', 'george-mathen', 'kochouseph-chittilappilly', 'major-chandrakant-nair'];
 
 for(var sp=0; sp<speakers.length; sp++){
   document.getElementById(speakers[sp]).addEventListener('click', function(event){
@@ -35,11 +35,11 @@ function modalClick(event){
 }
 
 window.sr = ScrollReveal({ reset: true });
-sr.reveal('footer', { duration: 1000, distance:'20px', reset:false});
-sr.reveal('#organisers', { duration: 1000, distance:'20px', reset:false });
-sr.reveal('#venue', { duration: 1000, distance:'20px', reset:false });
-sr.reveal('#speakers', { duration: 1000, distance:'20px', reset:false });
-sr.reveal('#about', { duration: 1000, distance:'20px', reset:false });
+sr.reveal('footer', { duration: 1000, reset:false});
+sr.reveal('#organisers', { duration: 1000, reset:false });
+sr.reveal('#venue', { duration: 1000, reset:false });
+sr.reveal('#speakers', { duration: 1000, reset:false });
+sr.reveal('#about', { duration: 1000, reset:false });
 
 var bg = document.getElementById('background-images');
 var bgImages = ['bg-1', 'bg-3'];
@@ -54,11 +54,15 @@ setInterval(function(){
       'opacity': 0.6
     });
 },3000);
-document.getElementById('get-tickets').addEventListener('click',function(){
-  $('#register-modal').modal('show');
-});
+/*document.getElementById('get-tickets').addEventListener('click',function(){
+    $('#get-tickets').addClass('loading');
+});*/
 
-document.getElementById('register-btn').addEventListener('click',function(){
-  $('#register-btn').addClass('loading');
-  window.location.href='https://www.yepdesk.com/tedx-gect';  
-});
+// document.getElementById('register-btn').addEventListener('click',function(){
+//   var college =$('input[name="college"]:checked')[0].value;
+//   $('#register-btn').addClass('loading');
+//   if (college == 'gec')
+//     window.location.href='https://docs.google.com/forms/d/1_hW93ZDgbdK0MTM2jzwpYjc4SMv_8bAyERbOEt66YqE/edit?c=0&w=1';
+//   else
+//       window.location.href='https://www.yepdesk.com/tedx-gect';
+// });
